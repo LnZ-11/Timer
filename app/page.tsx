@@ -6,7 +6,6 @@ import { useTimerList } from "./stores/useTimerList"
 import { motion } from "motion/react"
 
 
-
 export default function Home(){
     const { timers } = useTimerList();
     const { resetTimers } = useTimerList()
