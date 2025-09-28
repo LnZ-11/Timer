@@ -11,7 +11,7 @@ export default function Digits({maxValue, value, onChange}: {maxValue: number, v
     
     return(
             <div className="">
-                <input className="text-center text-[40px] h-[120px] w-[120px] border-none rounded-box" value={value} onChange={handleChange} />
+                <input className="text-center text-[40px] lg:h-[200px] lg:w-[200px] h-[80px] w-[80px] border-none rounded-box" value={value} onChange={handleChange} />
             </div>
     )
 } 
