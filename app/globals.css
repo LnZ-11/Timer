@@ -39,6 +39,11 @@
   --noise: 1;
 }
 
+/* Apply Roboto font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 @plugin "daisyui/theme" {
   name: "light";
   default: true;

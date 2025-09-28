@@ -1,6 +1,5 @@
 'use client'
 
-import defaultTheme from "tailwindcss/defaultTheme"
 import TimerSetter from "./components/timer"
 import Counter from "./components/counter"
 import { useTimerList } from "./stores/useTimerList"
@@ -9,7 +8,6 @@ import { motion } from "motion/react"
 
 
 export default function Home(){
-  console.log(defaultTheme.screens)
     const { timers } = useTimerList();
     const { resetTimers } = useTimerList()
   return(
@@ -36,7 +34,7 @@ export default function Home(){
             </motion.div>
           ))}
         </div>
-      <button className="btn btn-primary btn-lg rounded-selector" onClick={resetTimers}>erase all</button>
+      <button className="btn btn-primary btn-lg rounded-selector" onClick={resetTimers}>Clear All</button>
       </div>
     </main>
   )

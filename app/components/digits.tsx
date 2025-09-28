@@ -3,10 +3,9 @@
 export default function Digits({maxValue, value, onChange}: {maxValue: number, value: string, onChange: (value: string) => void}) {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        let val = e.target.value;
-        val = val.replace(/\D/g, "");
-        let num = Math.min(parseInt(val || "0", 10), maxValue);
-        let formatted = String(num).padStart(2, "0");
+        const val = e.target.value;
+        const num = Math.min(parseInt(val || "0", 10), maxValue);
+        const formatted = String(num).padStart(2, "0");
         onChange(formatted);
     };
     

@@ -1,13 +1,10 @@
 "use client"
 import Digits from "./digits"
 import { useTimerList } from "../stores/useTimerList"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function TimerSetter () {
     const { hours, minutes,seconds, addTimer, resetTimer } = useTimerList();
-    useEffect(() => {
-        console.log("Store changed:", hours, minutes, seconds);
-      }, [hours, minutes, seconds]);
     const [hoursValue, setHoursValue] = useState(hours);
     const [minutesValue, setMinutesValue] = useState(minutes);
     const [secondsValue, setSecondsValue] = useState(seconds);
